@@ -1,1 +1,273 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joolens Store 💎</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:linear-gradient(135deg,#09001f,#160044,#001b4d);
+  color:white;
+}
+
+header{
+  text-align:center;
+  padding:35px 15px;
+  background:rgba(0,0,0,.3);
+}
+
+header h1{
+  margin:0 0 10px;
+  font-size:38px;
+}
+
+header p{
+  margin:0;
+  color:#ccc;
+  font-size:18px;
+}
+
+.container{
+  max-width:650px;
+  margin:auto;
+  padding:25px 15px;
+}
+
+.player-box{
+  background:rgba(255,255,255,.08);
+  padding:20px;
+  border-radius:18px;
+  margin-bottom:25px;
+}
+
+.player-box label{
+  display:block;
+  font-weight:bold;
+  margin-bottom:10px;
+}
+
+.player-box input{
+  width:100%;
+  padding:15px;
+  border:0;
+  border-radius:12px;
+  font-size:17px;
+}
+
+.item{
+  background:rgba(20,0,60,.7);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:20px;
+  padding:25px 20px;
+  margin-bottom:18px;
+  text-align:center;
+}
+
+.item h2{
+  color:#00d9ff;
+  margin:0 0 10px;
+  font-size:28px;
+}
+
+.price{
+  font-size:24px;
+  font-weight:bold;
+  margin:15px 0;
+}
+
+button{
+  width:100%;
+  padding:15px;
+  border:0;
+  border-radius:13px;
+  background:linear-gradient(90deg,#3600ff,#008cff);
+  color:white;
+  font-size:17px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.contact{
+  display:block;
+  text-align:center;
+  background:#008000;
+  color:white;
+  text-decoration:none;
+  padding:16px;
+  border-radius:13px;
+  font-weight:bold;
+  margin-top:25px;
+}
+
+footer{
+  text-align:center;
+  padding:25px;
+  color:#888;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>💎 Joolens Store</h1>
+  <p>Recharge Free Fire rapidman</p>
+</header>
+
+<div class="container">
+
+  <div class="player-box">
+    <label for="playerId">🆔 Player ID Free Fire</label>
+    <input id="playerId" type="text" inputmode="numeric"
+           placeholder="Antre Player ID ou">
+  </div>
+
+  <div class="item">
+    <h2>💎 110 Diamonds</h2>
+    <div class="price">150 G</div>
+    <button onclick="order('110 Diamonds', '150 G')">🛒 Kòmande</button>
+  </div>
+
+  <div class="item">
+    <h2>💎 220 Diamonds</h2>
+    <div class="price">300 G</div>
+    <button onclick="order('220 Diamonds', '300 G')">🛒 Kòmande</button>
+  </div>
+
+  <div class="item">
+    <h2>💎 341 Diamonds</h2>
+    <div class="price">450 G</div>
+    <button onclick="order('341 Diamonds', '450 G')">🛒 Kòmande</button>
+  </div>
+
+  <div class="item">
+    <h2>💎 572 Diamonds</h2>
+    <div class="price">750 G</div>
+    <button onclick="order('572 Diamonds', '750 G')">🛒 Kòmande</button>
+  </div>
+
+  <div class="item">
+    <h2>💎 682 Diamonds</h2>
+    <div class="price">900 G</div>
+    <button onclick="order('682 Diamonds', '900 G')">🛒 Kòmande</button>
+  </div>
+
+  <div class="item">
+    <h2>💎 792 Diamonds</h2>
+    <div class="price">1,050 G</div>
+    <button onclick="order('792 Diamonds', '1,050 G')">🛒 Kòmande</button>
+  </div>
+
+  <div class="item">
+    <h2>💎 913 Diamonds</h2>
+    <div class="price">1,350 G</div>
+    <button onclick="order('913 Diamonds', '1,350 G')">🛒 Kòmande</button>
+  </div>
+
+  <div class="item">
+    <h2>💎 1,166 Diamonds</h2>
+    <div class="price">1,500 G</div>
+    <button onclick="order('1,166 Diamonds', '1,500 G')">🛒 Kòmande</button>
+  </div>
+
+  <div class="item">
+    <h2>💎 2,398 Diamonds</h2>
+    <div class="price">3,300 G</div>
+    <button onclick="order('2,398 Diamonds', '3,300 G')">🛒 Kòmande</button>
+  </div>
+
+  <div class="item">
+    <h2>💎 3,564 Diamonds</h2>
+    <div class="price">5,000 G</div>
+    <button onclick="order('3,564 Diamonds', '5,000 G')">🛒 Kòmande</button>
+  </div>
+
+  <div class="item">
+    <h2>💎 6,160 Diamonds</h2>
+    <div class="price">8,500 G</div>
+    <button onclick="order('6,160 Diamonds', '8,500 G')">🛒 Kòmande</button>
+  </div>
+
+  <div class="item">
+    <h2>💎 12,260 Diamonds</h2>
+    <div class="price">16,500 G</div>
+    <button onclick="order('12,260 Diamonds', '16,500 G')">🛒 Kòmande</button>
+  </div>
+
+  <div class="item">
+    <h2>💎 14,400 Diamonds</h2>
+    <div class="price">19,500 G</div>
+    <button onclick="order('14,400 Diamonds', '19,500 G')">🛒 Kòmande</button>
+  </div>
+
+  <div class="item">
+    <h2>💎 60,000 Diamonds</h2>
+    <div class="price">81,000 G</div>
+    <button onclick="order('60,000 Diamonds', '81,000 G')">🛒 Kòmande</button>
+  </div>
+
+  <div class="item">
+    <h2>🎁 Booyah Pass</h2>
+    <div class="price">500 G</div>
+    <button onclick="order('Booyah Pass', '500 G')">🛒 Kòmande</button>
+  </div>
+
+  <div class="item">
+    <h2>📅 Abonnement Semèn</h2>
+    <div class="price">375 G</div>
+    <button onclick="order('Abonnement Semèn', '375 G')">🛒 Kòmande</button>
+  </div>
+
+  <div class="item">
+    <h2>📅 Abonnement Mwa</h2>
+    <div class="price">1,650 G</div>
+    <button onclick="order('Abonnement Mwa', '1,650 G')">🛒 Kòmande</button>
+  </div>
+
+  <div class="item">
+    <h2>⭐ Super VIP</h2>
+    <div class="price">2,500 G</div>
+    <button onclick="order('Super VIP', '2,500 G')">🛒 Kòmande</button>
+  </div>
+
+  <a class="contact"
+     href="https://wa.me/50937625253">
+    📲 Kontakte Joolens Store
+  </a>
+
+</div>
+
+<footer>
+  © 2026 Joolens Store
+</footer>
+
+<script>
+function order(product, price) {
+  const playerId = document.getElementById("playerId").value.trim();
+
+  if (!playerId) {
+    alert("Tanpri antre Player ID ou anvan ou kòmande.");
+    return;
   }
+
+  const message =
+    "Bonjour Joolens Store, mwen vle kòmande " +
+    product +
+    " pou " +
+    price +
+    ". Player ID mwen se: " +
+    playerId;
+
+  window.location.href =
+    "https://wa.me/50937625253?text=" +
+    encodeURIComponent(message);
+}
+</script>
+
+</body>
+</html>  }
